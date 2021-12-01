@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.header {
+    background-color: lightpink;
+}
+
+.header h1 {
+    padding: 5px;
+}
+
+.celebrity-quotes ul li,
+.musician-quotes ul li {
+    list-style: none;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 5px;
+    font-style: italic;
+    font-family: trirong;
+}
+
+
+.celebrity-quotes ul li {
+    background-color: lightblue;
+    color: blue;
+}
+
+.musician-quotes ul li {
+    background-color: lightyellow;
+    color: blue;
+}
+.musician-quotes ul li span,
+.celebrity-quotes ul li span {
+    color: green;
+}
+
+
+
+
+.main {
+    margin: 0 auto;
+    width: 90%;
+    clear: both;
+  }
+
+
+main {
+    display: grid;
+    grid-template: "left middle-top right" 1fr
+                   "left middle-bottom right" 1fr /
+                    200px 1fr           200px;                    
+}                   
+
+.musician-quotes
+   {
+    grid-area: middle-top;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+
+.celebrity-quotes {
+    grid-area: middle-bottom;
+    font-family: serif;
+ 
+}  
+
+.celebrity-quotes,
+.musician-quotes {
+    text-align: center;
+}
+
+em {
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
